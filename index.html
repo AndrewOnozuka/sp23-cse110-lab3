@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <title>CSE 110 Lab 2</title>
     <link rel="icon" href="media/PowellPointPundits.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="'width=device-width, initial-scale=1">
     <meta name="description" content="CSE 110 Lab 2">
     <meta name="keywords" content="HTML">
     <meta name="author" content="Andrew Onozuka">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
         <h1>CSE 110 Team 5 Meeting 1 Notes</h1>
-        <h2>Date: <time datetime="2023-04-14">April 14th, 2023</time></h2>
-        <img src="https://blog.mozilla.org/opendesign/files/2017/06/logo.png" alt="MDN logo" width="200">
-        <h3>Table of Contents:</h3>
+        <h2 id="date">Date: <time datetime="2023-04-14">April 14th, 2023</time></h2>
+        <img src="https://blog.mozilla.org/opendesign/files/2017/06/logo.png" alt="MDN logo" id="mdnlogo">
+        <h3>TABLE OF CONTENTS</h3>
         <nav>
             <ul>
                 <li><a href="#attendance">Attendance</a></li>
@@ -31,52 +36,51 @@
     <hr>
     <main>
         <section>
+            <div style="clear:both;"></div>
             <div class="attendance">
-                <h2 id="attendance">Attendance:</h2>
+                <h2 id="attendance">Attendance</h2>
                 <ul>
-                    <li>Alex <span>Tahan</span></li>
-                    <li><b>Andrew</b> <span><b>Onozuka</b></span>*</li>
-                    <li>Joseph <span>Del Val</span></li>
-                    <li>Julia <span>Poon</span></li>
-                    <li>Merrick <span>Qiu</span></li>
-                    <li><b>Vivin</b> <span><b>Vinil</b></span>*</li>
-                    <li>Yuantian <span>Zhou</span></li>
+                    <li>Alex Tahan</li>
+                    <li class="lead">Andrew Onozuka*</li>
+                    <li>Joseph Del Val</li>
+                    <li>Julia Poon</li>
+                    <li>Merrick Qiu</li>
+                    <li class="lead">Vivin Vinil*</li>
+                    <li>Yuantian Zhou</li>
                 </ul>
-                *<i>team</i> <strong>leaders</strong>
+                <span>*denotes leaders</span>
             </div>
         </section>
         <hr>
         <section>
+        <h2 id="agenda">Agenda</h2>
             <div class="agenda">
-                <h2 id="agenda">Agenda:</h2>
-                <ol>
-                    <li><details>
-                        <summary>Team Dynamics</summary>
-                        <p>
-                            - communication is <em>key</em><br>
-                            - don't hesitate to follow up if no response from Malcolm within 24 hrs<br>
-                            - be punctual, <em>respect</em> other’s time (to add to previous point, don't spam him if you don't get a response right away, common sense really)<br>
-                            - keep camera on and participate in group meetings, espcially when online<br>
-                        </p>
-                    </details></li>
-                    <li><details>
-                        <summary>Expectations for the team</summary>
-                        <p>
-                            - teamwork, everyone needs to contribute<br>
-                            - show up to meetings consistently<br>
-                            - can be working on different things/parts of the project, as long as everyone is working<br>
-                            - respect, especially during disagreements and difficult decisions<br>
-                        </p>
-                    </details></li>
-                    <li><details>
-                        <summary>Expectations for the class</summary>
-                            - meeting in person (recommended), worst case online weekly<br>
-                            - weekly meetings with team leads starting week 4 (but available to everyone! encouraged to join if you're free)<br>
-                            - weekly pulse survey (for check ins, new thing starting this quarter)<br>
-                    </details></li>
-                    <li>Come up with a team name and brand</li>
-                    <li>Finish posterboard by <time datetime="2023-04-18">April 18th, 2023</time></li>
-                </ol>
+                <div class="c1"><details>
+                    <summary>Team Dynamics</summary>
+                    <p>
+                        - communication is <em>key</em><br>
+                        - don't hesitate to follow up if no response from Malcolm within 24 hrs<br>
+                        - be punctual, <em>respect</em> other’s time (to add to previous point, don't spam him if you don't get a response right away, common sense really)<br>
+                        - keep camera on and participate in group meetings, espcially when online<br>
+                    </p>
+                </details></div>
+                <div class="c2"><details>
+                    <summary>Expectations for the team</summary>
+                    <p>
+                        - teamwork, everyone needs to contribute<br>
+                        - show up to meetings consistently<br>
+                        - can be working on different things/parts of the project, as long as everyone is working<br>
+                        - respect, especially during disagreements and difficult decisions<br>
+                    </p>
+                </details></div>
+                <div class="c3"><details>
+                    <summary>Expectations for the class</summary>
+                        - meeting in person (recommended), worst case online weekly<br>
+                        - weekly meetings with team leads starting week 4 (but available to everyone! encouraged to join if you're free)<br>
+                        - weekly pulse survey (for check ins, new thing starting this quarter)<br>
+                </details></div>
+                <div class="c4">Come up with a team name and brand</div>
+                <div class="c5">Finish posterboard by <time datetime="2023-04-18">April 18th, 2023</time></div>
             </div>
         </section>
         <hr>
@@ -105,30 +109,30 @@
             <div class="qcc">
                 <h2 id="qcc">Questions, Comments, or Concerns:</h2>
                 <p>
-                    Q: How does grading work for the group project?<br>
-                    A: We get a group grade for the project, however, Malcolm reserves the right to move people’s grades up to a grade point<br>
-                    (ex. we get a B on the project, but Malcolm moves you to an A if you carried a lot of weight in the group).
+                    <div>Q. How does grading work for the group project?</div>
+                    <div>A. We get a group grade for the project, however, Malcolm reserves the right to move people’s grades up to a grade point<br>
+                        (ex. we get a B on the project, but Malcolm moves you to an A if you carried a lot of weight in the group).</div> 
                 </p>
             </div>
         </section>
         <hr>
         <section>
             <div class="diagram">
-                <h2 id="diagram">Diagram:</h2>
-                <img src="media/HTMLNestingDiagram.png" alt="HTML Nesting Diagram">
+                <h2 id="diagram">Diagram</h2>
+                <img src="media/HTMLNestingDiagram.png" alt="HTML Nesting Diagram" class="center">
             </div>
         </section>
         <hr>
         <section>
             <div class="audio">
-                <h2 id="audio">Audio Recording:</h2>
+                <h2 id="audio">Audio Recording</h2>
                 <audio src="media/audio.m4a" controls>Your browser does not support the audio element.</audio>
             </div>
         </section>
         <hr>
         <section>
             <div class="video">
-                <h2 id="video">Video Recording:</h2>
+                <h2 id="video">Video Recording</h2>
                 <video src="media/video.mov" controls>Your browser does not support the video element.</video>
             </div>
         </section>
@@ -138,11 +142,13 @@
                 <h2>Documentation:</h2>
                 <p>
                     Links relevant to this lab and the creation of this webpage, as well as original meeting notes on Google Docs can be found below:<br>
-                    <a href="https://docs.google.com/document/d/1Z8h4NkdQd9o5t9gnRHUnVUA4VMYHmlYKGBqL18Xm3dg/edit?usp=sharing">Google Doc</a><br>
-                    <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">HTML Basics</a><br>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network (MDN)</a><br>
-                    <a href="https://html.spec.whatwg.org/multipage/">Official HTML Specification</a><br>
-                    <a href="https://validator.w3.org/">W3C's HTML Validators</a><br>
+                    <div class="Links">
+                        <a href="https://docs.google.com/document/d/1Z8h4NkdQd9o5t9gnRHUnVUA4VMYHmlYKGBqL18Xm3dg/edit?usp=sharing">Google Doc</a><br>
+                        <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">HTML Basics</a><br>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network (MDN)</a><br>
+                        <a href="https://html.spec.whatwg.org/multipage/">Official HTML Specification</a><br>
+                        <a href="https://validator.w3.org/">W3C's HTML Validators</a><br>
+                    </div>
                 </p>
             </div>
         </section>
@@ -204,7 +210,7 @@
                             <option value="1800/Exploded Compact Full-Size">1800/Exploded Compact Full-Size</option>
                         </select><br>
                         <br>
-                        <button>Submit</button>
+                        <button class="button">Submit</button>
                     </fieldset>
                 </form>
             </div>
