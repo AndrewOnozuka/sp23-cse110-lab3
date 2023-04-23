@@ -186,8 +186,11 @@ html body > *:not(.links) {     /* pt2 universal selector, child combinator, pse
   /* min-width: none; */
   padding-bottom: 10pt;
 }
-audio {
-  display: table;
+.audio {
+  width: 100%;
+}
+.audio audio {
   margin: 0 auto;
+  display: table;
   padding-bottom: 10pt;
 }
