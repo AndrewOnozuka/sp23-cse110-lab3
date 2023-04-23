@@ -185,12 +185,10 @@ html body > *:not(.links) {     /* pt2 universal selector, child combinator, pse
   max-width: 100%;
   /* min-width: none; */
   padding-bottom: 10pt;
+  /* border: 3px solid rgb(0, 128, 0); */
 }
-.audio {
-  width: 100%;
-}
-.audio audio {
-  margin: 0 auto;
+audio {
   display: table;
-  padding-bottom: 10pt;
+  margin: 0 auto;
+  /* border: 3px solid rgb(0, 128, 0); */
 }
