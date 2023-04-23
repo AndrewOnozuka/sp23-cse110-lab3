@@ -1,0 +1,188 @@
+html {
+  font-family: 'Domine', serif;
+}
+
+header {                                  /* pt2 element selector */
+  background-color: hsl(220, 7%, 18%);  /* pt1 background color using hsl or hsla */
+
+  /* margin long hand notations */
+  margin-top: 2mm;                        /* pt1 unqiue absolute length unit 1 */
+  margin-bottom: 0.4cm;                   /* pt1 unique absolute length unit 2 */
+  margin-left: 10px;                      /* pt1 unique absolute length unit 3 */
+  margin-right: 10px;
+
+  /* border long hand notations */
+  border-style: solid;
+  border-color: rgb(0, 0, 0);           /* pt1 color using rgb or rgba */
+  border-width: auto;
+  border-radius: auto;
+}   
+#mdnlogo {                                /* pt2 ID selector */
+  display: block;                         /* pt1 display/block */
+  margin: 0 auto;
+  width: 200px;                           /* pt1 sizing/width */
+  position: static;                       /* pt1 position */
+}
+
+body {
+    background-color: #313338;          /* pt1 background color using hex code */
+    position: static;                      /* pt1 position */
+    /* border: 3px solid rgb(0, 128, 0); */
+}
+
+h1 {    /* main heading */
+  color: white;                         /* pt1 color using name */
+  text-align: center;                     /* pt1 text align */
+  margin: 0 0 0 0;                        /* pt1 margin short hand notation */
+  padding: 10pt;                          /* pt1 padding short hand notation */
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+
+#date {   /* using id to target a specific h2, overrides general h2 rules */
+  color: white;                         
+  text-align: center;
+  margin: auto;                           /* pt1 auto margin */
+
+  /* padding long hand notations */
+  padding-top: 0em;                       /* pt1 unique relative length unit 1 */
+  padding-bottom: 2ch;                    /* pt1 unique relative length unit 2 */
+  padding-left: 0ex;                      /* pt1 unique relative length unit 3 */
+  padding-right: 0px;
+}
+
+h2 {    /* subheadings */
+  color: #959BA3;
+}
+
+h3 {    /* table of contents */
+  text-align: center;
+  color: #959BA3;
+}
+
+/* navigation */
+nav ul {                                  /* pt2 descendant combinator */
+  list-style-type: none;                  /* removes bullet points for navigation menu */
+  text-align: center;       /* centers the inline block */
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+nav ul li {
+  display: inline-block;                  /* pt1 display/inline-block */
+  padding: 10px;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+nav ul li a {
+  color: white;
+  padding: 0.25em 1em;
+  text-decoration: none; /* no underline */
+  background-color: #2B2D31;
+  color: #959BA3;
+  border-top-left-radius: 0.5em 0.5em;
+  border-top-right-radius: 0.5em 0.5em;
+  border-bottom-left-radius: 0.5em 0.5em;
+  border-bottom-right-radius: 0.5em 0.5em;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active { /* pt1 pseudo-class */
+  color: #DCDEE1;
+  background-color: #36373C;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {    /* pt1 media query */
+  nav ul li a {
+    float: none;
+    display: block;
+  }
+  
+  nav ul li a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.attendance ul {              /* pt2 class selector */
+  list-style-type: none;      /* removes bullet points for navigation menu */
+  display: flex;              /* pt1 display flex property */
+  justify-content: space-evenly;
+}
+.attendance ul li {
+  color: #DCDEE1;
+  order: 0;                   /* pt1 flex property */
+  align-self: auto;           /* pt1 flex property */
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+.attendance ul li[class="lead"] {   /* pt2 attribute selector */
+  color: white;
+  font-weight: bold;
+  flex-grow: 0;               /* pt1 flex property */
+  align-self: auto;           /* pt1 flex property */
+  /* border: 3px solid rgb(0, 128, 0); */
+} 
+ul ~ span {                   /* pt2 general sibling combinator */
+  display: table;
+  margin: 0 auto;
+  color: red;
+  padding: 10px;
+}
+
+#agenda {
+  text-align: center;
+}
+.agenda {
+  display: grid;              /* pt1 grid property */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  padding: 10px;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+/* grid children below */
+.agenda .c1 {
+  color: #DCDEE1;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+.agenda .c2 {
+  color: #DCDEE1;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+.agenda .c3 {
+  color: #DCDEE1;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+.agenda .c4 {
+  color: #DCDEE1;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+.agenda .c5 {
+  color: #DCDEE1;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+
+.qcc div:first-of-type + div {              /* pt2 adjacent sibling combinator */
+  color: green;
+  padding-top: 10px;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+
+.button {
+  color: black;
+}
+
+html body > *:not(.links) {     /* pt2 universal selector, child combinator, pseudo-class selector */
+  color: white;
+}
+
+#attendance, #diagram, #audio, #video {
+  text-align: center;
+  /* border: 3px solid rgb(0, 128, 0); */
+}
+
+.center, audio, video {   /* pt2 selector list */
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  /* min-width: none; */
+  padding-bottom: 10pt;
+}
