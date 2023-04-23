@@ -177,12 +177,17 @@ html body > *:not(.links) {     /* pt2 universal selector, child combinator, pse
   /* border: 3px solid rgb(0, 128, 0); */
 }
 
-.center, audio, video {   /* pt2 selector list */
+.center, video {   /* pt2 selector list */
   display: block;
   margin: 0 auto;
   height: auto;
   width: auto;
   max-width: 100%;
   /* min-width: none; */
+  padding-bottom: 10pt;
+}
+audio {
+  display: block;
+  margin: 0 auto;
   padding-bottom: 10pt;
 }
