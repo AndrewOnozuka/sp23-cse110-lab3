@@ -1,2 +1,2 @@
-# Lab 2 Published Site
-https://andrewonozuka.github.io/CSE-110-Lab-2/
+# Lab 3 Published Site
+https://andrewonozuka.github.io/sp23-cse110-lab3/
